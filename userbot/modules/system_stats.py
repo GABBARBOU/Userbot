@@ -113,14 +113,14 @@ async def pipcheck(pip):
 
 @register(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
-    """ For .alive command, check if the bot is running.  """
+    """ For .alive, check if the bot is running.  """
     if not alive.text[0].isalpha() and alive.text[0] not in ("/", "#", "@", "!"):
         await alive.edit(
             "`"
-            "Your bot is running \n\n"
-            f"Telethon version: {version.__version__} \n"
-            f"Python: {python_version()} \n"
-            f"User: {DEFAULTUSER}"
+            "Apun Ashwathama Hai kabhi Nahi Marega! "
+
+
+
             "`"
             )
 
